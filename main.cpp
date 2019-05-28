@@ -64,9 +64,9 @@ int main ()
 		road[i] = way[i] = 0; incl[i] = false;
 	}
 	len = c_len = waylen = 0;
-	cout << "Введите начальную точку: ", cin >> start;
+	cout << "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅСѓСЋ РєРѕРѕСЂРґРёРЅР°С‚Сѓ: ", cin >> start;
 	inputch (start);
-	cout << "Введите конечую точку:	", cin >> finish;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅРµС‡РЅСѓСЋ РєРѕРѕСЂРґРёРЅР°С‚Сѓ:", cin >> finish;
 	inputch (finish);
 	road[0] = start;
 	incl[start] = true;
@@ -84,7 +84,6 @@ int inputch (int &g)
 	{
 		cin.clear ();
 		cin.ignore (cin.rdbuf ()->in_avail ());
-		//cout << "Ошибка! \n";
 		return false;
 	}
 	else
@@ -97,13 +96,13 @@ bool foundWay (bool foundf)
 {
 	if (foundf)
 	{
-		cout << "Ваш путь:	";
+		cout << "Р’Р°С€ РїСѓС‚СЊ:	";
 		for (int i = 0; i < waylen; i++) cout << way[i] << " -> "; cout << endl;
 		return true;
 	}
 	else
 	{
-		cout << "Ошибка! Путь не найден!";
+		cout << "РћС€РёР±РєР°! РџСѓС‚СЊ РЅРµ РЅР°Р№РґРµС‚!";
 		cout << endl;
 		return false;
 	}
@@ -125,27 +124,3 @@ bool checkWay (int start, int finish)
 
 	}
 }
-	/*int ii, ff;
-	cout << "Ваша матрица смежности:  \n";
-	for (int i = 0; i < k; i++)
-	{
-		for (int j = 0; j < k; j++)
-		{
-			cout << graph[i][j];
-		}
-		cout << endl;
-	}
-	prov (graph);
-	cout << "Введите вершину, к которой вы хотите найти путь:  ", cin >> ii;
-	inputch (ii);
-	--ii;
-	/*for (int i = 0; i < k; i++) // исходно все вершины равны 0
-		nodes[i] = 0;
-	cout << "Введите начальную координату:	", cin >> ii;
-	inputch (ii); ii--;
-	cout << "Введите конечную координату:	", cin >> ff;
-	inputch (ff); ff--;
-	search (ii, ff); cout << endl;	*/																																						//sshir (ii);
-
- 
-
