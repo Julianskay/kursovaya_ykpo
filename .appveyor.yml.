@@ -1,19 +1,19 @@
 version: 1.0.{build}
-image: Visual Studio 2015
+image: Visual Studio 2017
 configuration:
-- Debug
+- Release
 before_build:
-  - ps: $Env:PLATFORM_TOOLSET="v140"
+- ps: $Env:PLATFORM_TOOLSET="v141"
 build:
-  project: kurs_ykpo.sln
-  parallel: true
-  verbosity: minimal
+project: kurs_ykpo.sln
+parallel: true
+verbosity: minimal
 test:
-  assemblies:
-    - '.\*\UnitTest1.dll'
+assemblies:
+- '.\*\UnitTest1.dll'
 after_test:
-  - vstest.console /logger:Appveyor x64\Debug\UnitTest1.dll
+- vstest.console /logger:Appveyor x64\Release\UnitTest1.dll
 artifacts:
-- path: x64\Debug\kurs_ykpo.exe
-  name: Binary
-deploy: off 
+- path: x64\Release\kurs_ykpo.exe
+name: Binary
+deploy: off
