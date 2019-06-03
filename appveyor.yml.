@@ -11,7 +11,7 @@ before_build:
   verbosity: minimal
 test:
  assemblies:
- - '**\*.UnitTest1.dll'
+ - '.\*\UnitTest1.dll'
 after_test:
  - vstest.console /logger:Appveyor \Debug\UnitTest1.dll
 artifacts:
