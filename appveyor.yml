@@ -16,5 +16,5 @@ after_test:
  - vstest.console /logger:Appveyor \Debug\UnitTest1.dll
 artifacts:
  - path: x64\Debug\kurs_ykpo.exe
-name: Binary
+ name: Binary
 deploy: off
