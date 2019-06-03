@@ -78,20 +78,6 @@ namespace UnitTest1
 			bool a = string_test (c, n1);
 		}
 
-		/*	TEST_METHOD (Compare)
-		{
-		int a, b;
-		a = 5; b = a;
-		Assert::AreEqual<int> (a, b);
-		}
-
-		TEST_METHOD (NOTCompare)
-		{
-		int a, b;
-		a = 1; b = 7;
-		Assert::AreNotEqual<int> (a, b);
-		}*/
-
 		TEST_METHOD (GOODSearching)
 		{
 			Assert::IsTrue (foundWay (true));
