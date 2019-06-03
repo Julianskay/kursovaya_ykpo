@@ -3,7 +3,7 @@ image: Visual Studio 2015
 configuration:
 - Release
 before_build:
-  - ps: $Env:PLATFORM_TOOLSET="v141"
+  - ps: $Env:PLATFORM_TOOLSET="v140"
 build:
   project: kurs_ykpo.sln
   parallel: true
