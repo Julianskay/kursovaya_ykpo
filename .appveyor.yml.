@@ -10,9 +10,9 @@ build:
   verbosity: minimal
 test:
   assemblies:
-    - '.\*\kurs_ykpo.dll'
+    - '.\*\unittest1.dll'
 after_test:
-  - vstest.console /logger:Appveyor x64\Debug\kurs_ykpo.dll
+  - vstest.console /logger:Appveyor x64\Debug\unittest1.dll
 artifacts:
 - path: x64\Debug\kurs_ykpo.exe
   name: Binary
