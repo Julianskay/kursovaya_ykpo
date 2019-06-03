@@ -6,9 +6,9 @@ configuration:
 before_build:
  - ps: $Env:PLATFORM_TOOLSET="v140"
  build:
- project: kurs_ykpo.sln
- parallel: true
- verbosity: minimal
+  project: kurs_ykpo.sln
+  parallel: true
+  verbosity: minimal
 test:
  assemblies:
  - '**\*.UnitTest1.dll'
