@@ -1,0 +1,9 @@
+﻿  unittest1.cpp
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\kurs_ykpo\source.cpp(114): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\kurs_ykpo\source.cpp(115): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\unittest1\unittest1.cpp(36): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\unittest1\unittest1.cpp(42): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\kurs_ykpo\source.cpp(33): warning C4715: find: значение возвращается не при всех путях выполнения
+c:\users\julian\documents\visual studio 2015\projects\kurs_ykpo\kurs_ykpo\source.cpp(58): warning C4715: step: значение возвращается не при всех путях выполнения
+  UnitTest1.vcxproj -> c:\users\julian\documents\visual studio 2015\Projects\kurs_ykpo\Debug\UnitTest1.dll
+  UnitTest1.vcxproj -> c:\users\julian\documents\visual studio 2015\Projects\kurs_ykpo\Debug\UnitTest1.pdb (Partial PDB)
