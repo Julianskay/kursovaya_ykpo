@@ -64,9 +64,9 @@ int main ()
 		road[i] = way[i] = 0; incl[i] = false;
 	}
 	len = c_len = waylen = 0;
-	cout << "¬ведите начальную точку: ", cin >> start;
+	cout << "Введите начальную точку: ", cin >> start;
 	inputch (start);
-	cout << "¬ведите конечую точку:	", cin >> finish;
+	cout << "Введите конечую точку:	", cin >> finish;
 	inputch (finish);
 	road[0] = start;
 	incl[start] = true;
@@ -97,13 +97,13 @@ bool foundWay (bool foundf)
 {
 	if (foundf)
 	{
-		cout << "¬аш путь:	";
+		cout << "Ваш путь:	";
 		for (int i = 0; i < waylen; i++) cout << way[i] << " -> "; cout << endl;
 		return true;
 	}
 	else
 	{
-		cout << "ќшибка! ѕуть не найден!";
+		cout << "Ошибка! Путь не найден!";
 		cout << endl;
 		return false;
 	}
