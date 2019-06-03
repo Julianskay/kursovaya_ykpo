@@ -64,9 +64,9 @@ int main ()
 		road[i] = way[i] = 0; incl[i] = false;
 	}
 	len = c_len = waylen = 0;
-	cout << "Введите начальную координату: ", cin >> start;
+	cout << "¬ведите начальную точку: ", cin >> start;
 	inputch (start);
-	cout << "Введите конечную координату:", cin >> finish;
+	cout << "¬ведите конечую точку:	", cin >> finish;
 	inputch (finish);
 	road[0] = start;
 	incl[start] = true;
@@ -84,6 +84,7 @@ int inputch (int &g)
 	{
 		cin.clear ();
 		cin.ignore (cin.rdbuf ()->in_avail ());
+		//cout << "ќшибка! \n";
 		return false;
 	}
 	else
@@ -96,13 +97,13 @@ bool foundWay (bool foundf)
 {
 	if (foundf)
 	{
-		cout << "Ваш путь:	";
+		cout << "¬аш путь:	";
 		for (int i = 0; i < waylen; i++) cout << way[i] << " -> "; cout << endl;
 		return true;
 	}
 	else
 	{
-		cout << "Ошибка! Путь не найдет!";
+		cout << "ќшибка! ѕуть не найден!";
 		cout << endl;
 		return false;
 	}
@@ -123,4 +124,7 @@ bool checkWay (int start, int finish)
 		return false;
 
 	}
-}
+}																																				//sshir (ii);
+
+
+
